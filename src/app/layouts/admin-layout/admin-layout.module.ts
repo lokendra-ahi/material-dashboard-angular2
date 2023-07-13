@@ -17,6 +17,8 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
+import { AudioUploadComponent } from 'app/app-audio-upload/app-audio-upload.component';
+import { SpeechToTextComponent } from 'app/speech-to-text/speech-to-text.component';
 
 @NgModule({
   imports: [
@@ -40,6 +42,8 @@ import {MatSelectModule} from '@angular/material/select';
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
+    AudioUploadComponent,
+    SpeechToTextComponent
   ]
 })
 

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "canvas-replica-392701",
+  "private_key_id": "cb4acac7e12eb8c6a83a50df16308b827e2f94fd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwRq0GGTHYI4xT\nvd4t1QnDBEFGDI+RyffY+zpxKGi7t9mbAsJEEJTayrWdWkdojY4hUBM2bZ4+P1Fl\nvD448xyslraVz0LBo9t8rKEMFWyvlfRVd+HzTWU4LT6C1GmfY7zkLA6cJFPAdEwF\nYfDHpqdHc6QyFvV7o8b26feXSNYbXiXFzKEYRtXMWf2MdCrPxExfcWGDjndkOBni\naE4PiCo9zmBbsRkhOuyVfLIc15sDWNzN0xQozrCaerK1QOzoAy0oO+Od5hJb7jmx\nHpZQou5HT/CbjQQIKoZyo6PdGlXG5LPn6p3PmYS+HvSdk7GzWwkkfRHba2oSZdLB\nKcvKHOQzAgMBAAECggEARh73ORPQpiAN9En1FdpHFdKdfJYGjoH/G8tkRhtC/ll2\nMJl6WcUW0aoNcNi2yzp0LYBDBEW6yxw47vVg8xqSb31MiG94KLtb1k59iecD4x0N\nouobccN53kzxLu38TjFItKNp9GbnAgnBK+r38xOyO1QfHuXPJS3TOel8WivZL+0r\nkbVFb8egxECtJKSAB9zmT5VQcvsxQWVzEQ0Ux152d2bBFe4DbXIW62NNCWlUlgUN\nCoIjB+wUOt3EXtLiJ2YmfFVZONLjVez+hdqWF/tA5mQQbqf+XTvL0P2qACprCt7u\nh2Rfj7Vi6/2lArGX/5C5/ROa+o5ICa6uTTcy7WLpQQKBgQDuF0exd/U7XkvfzwrM\ngO16T4z2vGH9y511nyshXgmaF/54toHFsu7FbTAvpFGd8Ii+WAtg1psueCzDFdiH\nnOCo88Eg2flkS0T0NLd9zCh/TINUnKI6OJspWbi5leaTwFCtNYahG7Yznp8zttbV\n6b/dRdMn2LIdPtkkZDd9JeUd8QKBgQC9iRQJj0LjUCFPUQZrFvSwv7VIOrdNxlZe\n1RR2tb5zpvf78hoLBowOW6JZdOf4P6I7GURMLJm13+dOzyiY4i3AVhCJFSby1Zoq\nD5voHs+zA6Cl8iW3W3hB45UApiyi9o19+8s97Kf/5oT8x1QOROU3ZmpcQGsmIxUJ\nr/yn4JdQYwKBgHBKQIDdv6YhYg2LO1+aCuadsDEKRfkJ2BiKWjAhhsvLNzQ9d1UD\ngANS7N/7Upb3w7ZqFeu1K3kuKoZTvkyvW3GzjMlupGV97mZymnvVFuB6+JGmUgi9\ne8hzzWCR5y6WDDa0wOspA7SywgkE2awH03qLnPv1AoQyiPzV2ynF/poxAoGAVOVQ\nl1OXJ1BeCzQExvT6Vy0XmynJr0mWqFWTG/UeQJlaXHy905B0LX44Aw/NU7HVDdms\ncN5NX1zSM8ewrIIq8grazzwtPPoWWp6xO9CJQervC0WiRTXwcLrqo+bK+ZesGvEs\nwSj+uy3bBYqXCOktLppuK7IjDGsMYlF0vxFnVXcCgYEAmH42XmHMJ9EnN0LSg6B+\nCYDH1I4pBKnmd45wd7Rj3FIXlPvZ28SV3bJNlIWcMwGMnTHwbiddLoj0RXTdlMF/\nM7rAIiNUqJqYqhc9ILHuTne90XxeV6iU04Maq/QbeYADV3V0UHJCW7pKm433w2hx\n3X9JaNr8HLRJ1wCV6qIFAuw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sample-project@canvas-replica-392701.iam.gserviceaccount.com",
+  "client_id": "107103190243779761695",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sample-project%40canvas-replica-392701.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

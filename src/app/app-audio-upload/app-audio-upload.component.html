@@ -1,0 +1,107 @@
+<div class="input-wrapper">
+
+    <label for="custom-file-input">
+        <div id="file-input-container">
+          <!-- <img src="../src/assets/img/upload.gif" alt="File Upload" id="file-input-animation"> -->
+          <i *ngIf="selectedFileName =='Click to Upload' " _ngcontent-asn-c50="" class="material-icons" style="cursor: pointer;">upload</i>
+
+          <i   *ngIf="selectedFileName !='Click to Upload' " _ngcontent-asn-c50="" class="material-icons" style="color: green;">call</i>
+          <p id="file-input-text">{{ selectedFileName }}</p>
+        </div>
+      </label>
+      <input type="file" id="custom-file-input" style="display: none;" (change)="onFileChange($event)">
+      
+
+      
+  </div>
+  <div class="upload-button-container">
+    <button class="upload-button"  *ngIf="selectedFileName !=='Click to Upload' " (click)="onUpload()" >Process</button>
+  </div>
+
+
+  <div class="container" *ngIf="selectedFileName !=='Click to Upload' ">
+    <div class="content">
+        <div class="resizable-container">
+
+
+            <p *ngIf="'Alerts' == screen " class="resizable-text">In this example, the .resizable-container class represents the resizable container, while the .content class represents the content area inside it. The .tabs class represents the vertical tabs section.
+
+                The flex-grow: 1; property ensures that the content area expands to fill the remaining space in the resizable container. You can adjust the background-color, padding, and other styles as needed.
+                
+                The ul, li, and a selectors define the styles for the unordered list and list items that represent the tabs. The .active class is applied to the currently active tab, giving it a different background color and bold font weight.
+                
+                By using this approach, you can create a resizable container with the content area on the left side and four vertical tabs on the right side. "The majestic elephant roamed freely through the dense forest, its massive form casting a shadow over the vibrant landscape. Birds chirped overhead as a gentle breeze rustled the leaves of the tall trees. The sound of a distant guitar echoed through the air, adding a melodic touch to the serene atmosphere. In the midst of this natural beauty, a curious cat cautiously approached, its eyes fixed on a playful rabbit hopping amongst the bushes. Meanwhile, a young boy flew a colorful kite, his laughter filling the air. The sun cast a warm glow on the scene, illuminating the orange hues of the setting sky. As evening descended, the boy returned home and sat at his piano, his nimble fingers dancing across the keys, creating a beautiful melody. In the corner, a jackal silently observed, its keen eyes reflecting the wisdom of the wild. The day faded into night, with the queen of the night sky, the moon, rising above the mountains. With a notebook in hand, the boy sat beneath the tree, penning his thoughts under the watchful gaze of the stars."
+
+                Please note that this paragraph is randomly generated and may not have a coherent theme or message. It's simply a collection of sentences using the words provided.
+                "The majestic elephant roamed freely through the dense forest, its massive form casting a shadow over the vibrant landscape. Birds chirped overhead as a gentle breeze rustled the leaves of the tall trees. The sound of a distant guitar echoed through the air, adding a melodic touch to the serene atmosphere. In the midst of this natural beauty, a curious cat cautiously approached, its eyes fixed on a playful rabbit hopping amongst the bushes. Meanwhile, a young boy flew a colorful kite, his laughter filling the air. The sun cast a warm glow on the scene, illuminating the orange hues of the setting sky. As evening descended, the boy returned home and sat at his piano, his nimble fingers dancing across the keys, creating a beautiful melody. In the corner, a jackal silently observed, its keen eyes reflecting the wisdom of the wild. The day faded into night, with the queen of the night sky, the moon, rising above the mountains. With a notebook in hand, the boy sat beneath the tree, penning his thoughts under the watchful gaze of the stars."
+
+                Please note that this paragraph is randomly generated and may not have a coherent theme or message. It's simply a collection of sentences using the words provided.</p>
+
+            <div *ngIf="'Sentiments' == screen">
+                <h3>Sentiments</h3>
+
+
+                <!-- <div class="sentiment-container">
+                    <div class="sentence" *ngFor="let sentence of sentences">
+                      <span class="text">{{ sentence.text }}</span>
+                      <span [ngClass]="{'sentiment': true, 'positive': sentence.sentiment === 'Positive', 'negative': sentence.sentiment === 'Negative', 'neutral': sentence.sentiment === 'Neutral'}">{{ sentence.sentiment }}</span>
+                      <span class="score" >Score: {{ sentence.score ? sentence.score : '-'  }}</span>
+                    </div>
+                  </div>
+                   -->
+                  
+                   <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link1" id="positive-tab" data-toggle="tab" href="#positive" role="tab" aria-controls="positive" aria-selected="false" style="color: green;" active>Positive</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link1" id="negative-tab" data-toggle="tab" href="#negative" role="tab" aria-controls="negative" aria-selected="false" style="color: #991111;">Negative</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link1" id="neutral-tab" data-toggle="tab" href="#neutral" role="tab" aria-controls="neutral" aria-selected="false">Neutral</a>
+                    </li>
+                  </ul>
+                  
+                  <div class="tab-content">
+                    <div class="tab-pane fade" id="positive" role="tabpanel" aria-labelledby="positive-tab">
+                      <div class="sentence" *ngFor="let sentence of positiveSentences">{{ sentence.text }}</div>
+                    </div>
+                    <div class="tab-pane fade" id="negative" role="tabpanel" aria-labelledby="negative-tab">
+                      <div class="sentence" *ngFor="let sentence of negativeSentences">{{ sentence.text }}</div>
+                    </div>
+                    <div class="tab-pane fade" id="neutral" role="tabpanel" aria-labelledby="neutral-tab">
+                      <div class="sentence" *ngFor="let sentence of neutralSentences">{{ sentence.text }}</div>
+                    </div>
+                  </div>
+
+                  
+
+                  
+            </div>
+
+
+            <div *ngIf="'Classification' == screen">
+                Classification
+            </div>
+
+
+            <div *ngIf="'Languages' == screen">
+                Languages
+            </div>
+
+          </div>          
+    </div>
+    <div class="tabs">
+      <ul>
+        <li  (click)="open('Alerts')"
+        [ngClass]="{'active': screen === 'Alerts'}"
+        ><a >Audio Text</a></li>
+        <li (click)="open('Sentiments')" 
+        [ngClass]="{'active': screen === 'Sentiments'}"
+        ><a >Sentiments</a></li>
+        <li (click)="open('Classification')"        [ngClass]="{'active': screen === 'Classification'}" ><a >Classification</a></li>
+        <li (click)="open('Languages')"  [ngClass]="{'active': screen === 'Languages'}"  ><a >Languages</a></li>
+      </ul>
+    </div>
+  </div>
+  
